@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GADS_2020</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Learning">string</string>
+    <string name="Learning_Leaders">string</string>
+    <string name="Skill_IQ">string</string>
+</resources>
