@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gads_2020">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +11,7 @@
         android:roundIcon="@drawable/landing_image"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SubmitActivity"></activity>
         <activity android:name=".Launching_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,6 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
