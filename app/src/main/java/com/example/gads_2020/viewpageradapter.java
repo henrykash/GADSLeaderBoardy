@@ -15,14 +15,14 @@ public class viewpageradapter extends FragmentPagerAdapter {
         super(supportFragmentManager);
     }
 
-    @NonNull
+   // @NonNull
     @Override
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                return new learning_leaders();
+                return new LearningLeaders();
             case 1:
-                return new skill_iq();
+                return new SkillIQ();
             default:
                 return null;
         }
