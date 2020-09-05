@@ -1,20 +1,17 @@
 package com.example.gads_2020;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
-import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class Launching_Activity extends AppCompatActivity {
+public class LaunchingActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private ViewPager viewPager;
     private TabLayout tabLayout;
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -33,9 +30,5 @@ public class Launching_Activity extends AppCompatActivity {
 
         TabLayout tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
-
-
-
-
     }
 }
