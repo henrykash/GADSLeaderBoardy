@@ -6,13 +6,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/landing_image"
+        android:icon="@mipmap/landing_image"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/landing_image"
+        android:roundIcon="@mipmap/landing_image"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SubmitActivity"></activity>
-        <activity android:name=".Launching_Activity">
+        <activity android:name=".LaunchingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
