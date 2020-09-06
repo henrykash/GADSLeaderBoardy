@@ -12,6 +12,7 @@ public class Leader {
     @Json(name = "badgeUrl")
     public String badgeUrl;
 
+
     //constructor
     public Leader() {
     }

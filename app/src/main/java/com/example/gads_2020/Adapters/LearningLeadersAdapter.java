@@ -22,6 +22,10 @@ public class LearningLeadersAdapter extends RecyclerView.Adapter<LearningLeaders
     //initialize the array list
     private List<Leader> leaderBoard = new ArrayList<>();
 
+    public LearningLeadersAdapter(List<Leader> leaderBoard, Context context) {
+
+    }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
