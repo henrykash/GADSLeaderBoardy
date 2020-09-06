@@ -7,7 +7,7 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.http.GET;
 
-public interface GadsApiService {
+public interface LeaderBoardDataService {
     String baseUrl = "https://gadsapi.herokuapp.com";
 
     @GET("/api/hours")
