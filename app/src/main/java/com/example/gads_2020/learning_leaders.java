@@ -26,7 +26,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 
-public class LearningLeaders extends Fragment {
+public class learning_leaders extends Fragment {
 
     Context context;
     private RecyclerView recyclerView;
@@ -34,11 +34,16 @@ public class LearningLeaders extends Fragment {
     private List<Leader> leaderBoard;
     private View view;
     private LinearLayoutManager linearLayoutManager;
+    private RecyclerView recyclerview;
 
 
     //add a public constructor
-    public LearningLeaders(Context context) {
+    public learning_leaders(Context context) {
         this.context = context;
+    }
+
+    public learning_leaders() {
+
     }
 
     @Override
@@ -52,6 +57,8 @@ public class LearningLeaders extends Fragment {
         recyclerView.setLayoutManager(linearLayoutManager);
         return view;
 
+
+
     }
 
     @Override
@@ -64,7 +71,7 @@ public class LearningLeaders extends Fragment {
             @Override
             public void onResponse(Call<List<Leader>> call, Response<List<Leader>> response) {
                 List<Leader> leaderBoard = response.body();
-                learningLeadersAdapter = new LearningLeadersAdapter(leaderBoard, getContext());
+                learningLeadersAdapter = new LearningLeadersAdapter(leaderBoard, getActivity());
             }
 
             @Override

@@ -20,7 +20,7 @@ public class viewpageradapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                return new LearningLeaders();
+                return new learning_leaders();
             case 1:
                 return new SkillIQ();
             default:

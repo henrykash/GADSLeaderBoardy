@@ -4,6 +4,14 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.1"
 
+
+    android {
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+
     defaultConfig {
         applicationId "com.example.gads_2020"
         minSdkVersion 14

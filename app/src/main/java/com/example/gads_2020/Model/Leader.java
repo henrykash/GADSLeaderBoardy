@@ -1,15 +1,16 @@
 package com.example.gads_2020.Model;
 
+import com.google.gson.annotations.SerializedName;
 import com.squareup.moshi.Json;
 
 public class Leader {
-    @Json(name = "name")
+    @SerializedName("name")
     public String name;
-    @Json(name = "hours")
-    public Integer hours;
-    @Json(name = "country")
+    @SerializedName("hours")
+    public String hours;
+    @SerializedName("country")
     public String country;
-    @Json(name = "badgeUrl")
+    @SerializedName("badgeUrl")
     public String badgeUrl;
 
 
@@ -25,11 +26,11 @@ public class Leader {
         this.name = name;
     }
 
-    public Integer getHours() {
+    public String getHours() {
         return hours;
     }
 
-    public void setHours(Integer hours) {
+    public void setHours(String hours) {
         this.hours = hours;
     }
 
