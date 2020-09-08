@@ -22,10 +22,6 @@ public class ServiceBuilder {
         private static OkHttpClient.Builder okHttp =
                 new OkHttpClient.Builder().addInterceptor(logger);
 
-        private static Retrofit.Builder builder = new Retrofit.Builder().baseUrl(URL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .client(okHttp.build());
-
         private static Retrofit retrofit = builder.build();
 
         //helper class to assist in building services
