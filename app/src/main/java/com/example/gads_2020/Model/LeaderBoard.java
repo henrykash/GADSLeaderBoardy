@@ -13,6 +13,9 @@ public class LeaderBoard {
     @SerializedName("badgeUrl")
     @Expose
     private String image;
+    @SerializedName("country")
+    @Expose
+    private String country;
 
     public LeaderBoard() {
 
@@ -42,12 +45,18 @@ public class LeaderBoard {
         this.image = image;
     }
 
+    public String getCountry() { return country;}
+
+    public void setCountry(String country) {this.country = country;}
+
     @Override
     public String toString() {
         return "LeaderBoard{" +
                 "name='" + name + '\'' +
                 ", hours='" + hours + '\'' +
                 ", image=" + image +
+
+
                 '}';
     }
 }

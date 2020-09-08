@@ -51,7 +51,7 @@ public class LearningLeadersAdapter extends RecyclerView.Adapter<LearningLeaders
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         //initialize the text views
-        private TextView textView1, textView2;
+        private TextView textView1, textView2, country;
         private ImageView image;
 
         public ViewHolder(@NonNull View itemView) {
@@ -59,12 +59,14 @@ public class LearningLeadersAdapter extends RecyclerView.Adapter<LearningLeaders
 
             textView1 = itemView.findViewById(R.id.learning_textView_1);
             textView2 = itemView.findViewById(R.id.learning_textView_2);
+            country   = itemView.findViewById(R.id.country);
             image = itemView.findViewById(R.id.learning_image);
         }
 
         public void bind(LeaderBoard leaderBoard) {
             textView1.setText(leaderBoard.getName());
             textView2.setText(leaderBoard.getHours());
+            country.setText(leaderBoard.getCountry());
 
             Glide.with(image.getContext())
                     .load(leaderBoard.getImage())
