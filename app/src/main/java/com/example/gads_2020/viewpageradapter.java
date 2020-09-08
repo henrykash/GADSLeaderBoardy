@@ -22,7 +22,7 @@ public class viewpageradapter extends FragmentPagerAdapter {
             case 0:
                 return new learning_leaders();
             case 1:
-                return new SkillIQ();
+                return new Skill_iq();
             default:
                 return null;
         }

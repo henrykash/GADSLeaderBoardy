@@ -20,7 +20,7 @@ public class LearningLeadersAdapter extends RecyclerView.Adapter<LearningLeaders
 
     //initialize the array list
     private List<LeaderBoard> leaderBoard = new ArrayList<>();
-
+    //initialize the constructor
     public LearningLeadersAdapter() {
 
     }
@@ -59,7 +59,7 @@ public class LearningLeadersAdapter extends RecyclerView.Adapter<LearningLeaders
 
             textView1 = itemView.findViewById(R.id.learning_textView_1);
             textView2 = itemView.findViewById(R.id.learning_textView_2);
-            country   = itemView.findViewById(R.id.country);
+            country = itemView.findViewById(R.id.country);
             image = itemView.findViewById(R.id.learning_image);
         }
 
