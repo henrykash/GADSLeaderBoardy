@@ -1,6 +1,9 @@
 package com.example.gads_2020;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -14,6 +17,7 @@ public class LaunchingActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private TabLayout tabLayout;
     private RecyclerView recyclerview;
+    private Button submitbutton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -23,6 +27,15 @@ public class LaunchingActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Button submitbutton = findViewById(R.id.submit_button);
+        submitbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent (LaunchingActivity.this, SubmitActivity.class));
+            }
+        });
 
 
         ViewPager viewPager = findViewById(R.id.viewpager);
@@ -34,6 +47,8 @@ public class LaunchingActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
         recyclerview = findViewById(R.id.learning_leaders);
+
+
 
 
     }
