@@ -22,14 +22,20 @@
             android:id="@+id/relative_toolbar2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/backstack"
+                android:layout_width="32dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/back_stack"/>
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/gads"
                 android:layout_width="500dp"
                 android:layout_height="100dp"
-                android:layout_marginLeft="-150dp"
-                android:src="@drawable/gads"
-                >
+                android:layout_marginLeft="-100dp"
+                android:src="@drawable/gads_2">
 
             </androidx.appcompat.widget.AppCompatImageView>
 
@@ -100,8 +106,10 @@
         android:layout_marginTop="96dp"
         android:layout_marginEnd="104dp"
         android:layout_marginRight="104dp"
-        android:background="@drawable/buttons"
+        android:background="@drawable/buttons3"
         android:text="Button"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
