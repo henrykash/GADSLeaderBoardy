@@ -62,7 +62,7 @@ public class SkillIQAdapter extends RecyclerView.Adapter<SkillIQAdapter.ViewHold
 
         public void bind(SkillIQ skillIQ) {
             textView1.setText(skillIQ.getName());
-            textView2.setText(skillIQ.getSkillscore());
+            textView2.setText(skillIQ.getSkilliq());
             country.setText(skillIQ.getCountry());
 
             Glide.with(image.getContext())

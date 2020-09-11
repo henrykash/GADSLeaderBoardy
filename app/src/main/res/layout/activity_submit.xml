@@ -92,24 +92,24 @@
         android:layout_marginTop="68dp"
         android:background="@drawable/buttons"
         android:ems="10"
-        android:inputType="textUri"
         android:hint="Project on Github(link)"
+        android:inputType="textUri"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="104dp"
-        android:layout_marginRight="104dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
         android:background="@drawable/buttons3"
-        android:text="Button"
-        android:textSize="22sp"
+        android:text="Submit"
         android:textColor="#ffffff"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 </androidx.constraintlayout.widget.ConstraintLayout>

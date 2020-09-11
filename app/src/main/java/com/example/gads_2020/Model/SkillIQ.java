@@ -7,9 +7,9 @@ public class SkillIQ {
     @SerializedName("name")
     @Expose
     private String name;
-    @SerializedName("skillscore")
+    @SerializedName("skilliq")
     @Expose
-    private String skillscore;
+    private String skilliq;
     @SerializedName("badgeUrl")
     @Expose
     private String image;
@@ -29,12 +29,12 @@ public class SkillIQ {
         this.name = name;
     }
 
-    public String getSkillscore() {
-        return skillscore;
+    public String getSkilliq() {
+        return skilliq;
     }
 
-    public void setSkillscore(String skillscore) {
-        this.skillscore = skillscore;
+    public void setSkilliq(String skilliq) {
+        this.skilliq = skilliq;
     }
 
     public String getImage() {
@@ -57,7 +57,7 @@ public class SkillIQ {
     public String toString() {
         return "SkillIQ{" +
                 "name='" + name + '\'' +
-                ", skillscore='" + skillscore + '\'' +
+                ", skilliq='" + skilliq + '\'' +
                 ", image='" + image + '\'' +
                 ", country='" + country + '\'' +
                 '}';
