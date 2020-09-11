@@ -19,7 +19,8 @@ public class SubmitActivity extends AppCompatActivity {
     private ImageButton backstack;
     EditText tvname, tvlast, tvlink, email;
     Button btnsubmit;
-    Dialog customdialog;
+    Dialog customdialog, successful, notsuccessful;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +49,7 @@ public class SubmitActivity extends AppCompatActivity {
             public void onClick(View view) {
                 showCustomDialog();
 
-                }
+            }
         });
     }
 
@@ -65,7 +66,7 @@ public class SubmitActivity extends AppCompatActivity {
         final CardView Cardview = findViewById(R.id.sure_cardview);
         final ImageButton closebutton = findViewById(R.id.close_button);
         final TextView sure = findViewById(R.id.sure_textview);
-        final Button yes  = findViewById(R.id.yes_button);
+        final Button yes = findViewById(R.id.yes_button);
 
         yes.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,5 +79,44 @@ public class SubmitActivity extends AppCompatActivity {
         customdialog.show();
     }
 
+    private void setCustomdialog2() {
+
+        final Dialog customdialog2 = new Dialog(SubmitActivity.this);
+
+        customdialog2.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+        customdialog2.setCancelable(true);
+
+        customdialog2.setContentView(R.layout.successful_dialog_box);
+
+        final ImageView check = findViewById(R.id.succesful_imageview);
+        final TextView successful = findViewById(R.id.successful_textview);
+
+
+        customdialog2.show();
+    }
+
+    private void setCustomdialog3() {
+
+        final Dialog customdialog3 = new Dialog(SubmitActivity.this);
+
+        customdialog3.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+        customdialog3.setCancelable(true);
+
+        customdialog3.setContentView(R.layout.successful_not_dialog_box);
+
+        final ImageView check = findViewById(R.id.not_succesful_imageview);
+        final TextView successful = findViewById(R.id.not_successful_textview);
+
+
+        customdialog3.show();
+
+    }
 
 }
+
+
+
+
+
