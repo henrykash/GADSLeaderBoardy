@@ -36,11 +36,11 @@ public class SubmitActivity extends AppCompatActivity {
 
         //initialize edit text views and button
 
-      /*  email = findViewById(R.id.editTextTextEmailAddress);
+        email = findViewById(R.id.editTextTextEmailAddress);
         tvname = findViewById(R.id.editTextTextPersonName);
         tvlast = findViewById(R.id.editTextTextPersonName2);
         tvlink = findViewById(R.id.editTextTextPersonName3);
-      */  btnsubmit = findViewById(R.id.button);
+        btnsubmit = findViewById(R.id.button);
 
         //use retrofit to call the end point
         btnsubmit.setOnClickListener(new View.OnClickListener() {
@@ -70,7 +70,8 @@ public class SubmitActivity extends AppCompatActivity {
         yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+
+
             }
         });
 
