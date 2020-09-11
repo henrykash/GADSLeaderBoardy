@@ -67,7 +67,6 @@ public class SkillIQAdapter extends RecyclerView.Adapter<SkillIQAdapter.ViewHold
 
             Glide.with(image.getContext())
                     .load(skillIQ.getImage())
-                    .centerCrop()
                     .into(image);
         }
 

@@ -8,11 +8,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/sure_cardview"
-        android:layout_width="370dp"
+        android:layout_width="350dp"
         android:layout_height="370dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:elevation="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,7 +19,7 @@
         app:layout_constraintVertical_bias="1.0" >
 
         <RelativeLayout
-            android:layout_width="370dp"
+            android:layout_width="350dp"
             android:layout_height="370dp">
 
             <ImageButton
