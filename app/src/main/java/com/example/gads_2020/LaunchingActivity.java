@@ -16,7 +16,7 @@ public class LaunchingActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private ViewPager viewPager;
     private TabLayout tabLayout;
-    private RecyclerView recyclerview;
+    private RecyclerView recyclerview, recyclerView2;
     private Button submitbutton;
 
     @Override
@@ -47,6 +47,8 @@ public class LaunchingActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
         recyclerview = findViewById(R.id.learning_leaders);
+        recyclerView2 = findViewById(R.id.skill_iq);
+
 
 
 

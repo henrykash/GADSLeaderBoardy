@@ -44,6 +44,7 @@ public class SkillIQAdapter extends RecyclerView.Adapter<SkillIQAdapter.ViewHold
 
     public void setSkillIQ(List<SkillIQ> skillIQ) {
         this.skillIQ = skillIQ;
+        notifyDataSetChanged();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {

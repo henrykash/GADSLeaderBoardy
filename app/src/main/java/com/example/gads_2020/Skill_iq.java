@@ -61,6 +61,7 @@ public class Skill_iq extends Fragment {
             @Override
             public void onFailure(Call<List<SkillIQ>> call, Throwable t) {
 
+
             }
         });
 
