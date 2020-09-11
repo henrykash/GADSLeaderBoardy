@@ -34,7 +34,7 @@
                 android:layout_below="@+id/skill_textView_1"
                 android:layout_marginLeft="150dp"
                 android:layout_marginTop="2.5dp"
-                android:text="skill_score"
+                android:text="skill"
                 android:textSize="16sp"
                 app:fontFamily="sans-serif-light"
                  />
