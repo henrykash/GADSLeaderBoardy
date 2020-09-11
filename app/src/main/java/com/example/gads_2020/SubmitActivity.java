@@ -9,7 +9,16 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.gads_2020.Model.StudentDataSubmission;
+import com.example.gads_2020.Service.ServiceBuilder;
+import com.example.gads_2020.Service.ServiceSubmit;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
 public class SubmitActivity extends AppCompatActivity {
+
 
     private ImageButton backstack;
     EditText tvname, tvlast, tvlink, email;
@@ -45,7 +54,21 @@ public class SubmitActivity extends AppCompatActivity {
                 String emailAddress = email.getText().toString();
                 String gitLink = tvlink.getText().toString();
                 if (!firstName.isEmpty() && !lastName.isEmpty() && !emailAddress.isEmpty() && !gitLink.isEmpty()) {
-                    //  Call<StudentDataSubmission> studentDataSubmissionCall =
+                    ServiceSubmit serviceSubmit = ServiceBuilder.buildService(ServiceSubmit.class);
+                    Call<StudentDataSubmission> submitRequest = serviceSubmit.submitProject(firstName, lastName, emailAddress, gitLink);
+                    submitRequest.enqueue(new Callback<StudentDataSubmission>() {
+                        @Override
+                        public void onResponse(Call<StudentDataSubmission> call, Response<StudentDataSubmission> response) {
+                            if (!response.isSuccessful()) {
+
+                            }
+                        }
+
+                        @Override
+                        public void onFailure(Call<StudentDataSubmission> call, Throwable t) {
+
+                        }
+                    });
                 }
 
             }
