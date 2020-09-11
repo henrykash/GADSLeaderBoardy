@@ -3,6 +3,7 @@ package com.example.gads_2020;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.telecom.Call;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -14,10 +15,14 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.example.gads_2020.Model.StudentDataSubmission;
+import com.example.gads_2020.Service.ServiceBuilder;
+import com.example.gads_2020.Service.ServiceSubmit;
+
 public class SubmitActivity extends AppCompatActivity {
 
     private ImageButton backstack;
-    EditText tvname, tvlast, tvlink, email;
+    EditText first_name, last_name , link, email;
     Button btnsubmit;
     Dialog customdialog, successful, notsuccessful;
 
@@ -38,9 +43,9 @@ public class SubmitActivity extends AppCompatActivity {
         //initialize edit text views and button
 
         email = findViewById(R.id.editTextTextEmailAddress);
-        tvname = findViewById(R.id.editTextTextPersonName);
-        tvlast = findViewById(R.id.editTextTextPersonName2);
-        tvlink = findViewById(R.id.editTextTextPersonName3);
+        first_name = findViewById(R.id.editTextTextPersonName);
+        last_name = findViewById(R.id.editTextTextPersonName2);
+        link = findViewById(R.id.editTextTextPersonName3);
         btnsubmit = findViewById(R.id.button);
 
         //use retrofit to call the end point
@@ -71,6 +76,16 @@ public class SubmitActivity extends AppCompatActivity {
         yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                ServiceSubmit submitservice = ServiceBuilder.buildService(ServiceSubmit.class);
+
+                Call<StudentDataSubmission> submit = ServiceSubmit.submitProject(
+                )
+
+
+                String Firstname  = first_name.getText().toString();
+                String Lastname = last_name.getText().toString();
+                String Email = email.getText().toString();
+                String Link = link.getText().toString();
 
 
             }

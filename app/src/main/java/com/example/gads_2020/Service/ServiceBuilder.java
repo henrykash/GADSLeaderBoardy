@@ -26,4 +26,14 @@ public class ServiceBuilder {
                 return retrofit.create(serviceType);
         }
 
+        private final static String SEND_URL = "https://docs.google.com/forms/d/e/";
+        private static Retrofit.Builder build = new Retrofit.Builder().baseUrl(SEND_URL)
+                .addConverterFactory(GsonConverterFactory.create());
+
+        private static Retrofit retrofit2  = builder.build();
+
+        public <P> P buildServices(Class<P> endpoint) {
+                return retrofit.create(endpoint);
+        }
+
 }

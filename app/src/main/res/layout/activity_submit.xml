@@ -59,10 +59,10 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="156dp"
+        android:layout_width="165dp"
         android:layout_height="50dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:layout_marginTop="168dp"
         android:background="@drawable/buttons"
         android:ems="10"
